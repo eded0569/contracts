@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>htmx 1</title>
+<!-- Load from unpkg -->
+<script src="https://unpkg.com/htmx.org@1.2.1"></script><script src="https://unpkg.com/htmx.org@1.2.1"></script>
+
+</head>
+<body>
+
+<div>
+  <button hx-get="hhttps://github.com/eded0569/contracts/blob/main/index2.html" hx-target="#output1">
+      GH - 1
+  </button>
+  </div>
+
+<div>
+<button hx-get="https://v2.jokeapi.dev/joke/Any?format=txt" hx-target="#output2">
+    Joke - 2
+</button>
+</div>
+
+<div id="output1">
+</div>
+
+<div id="output2">
+</div>
+
+</body>
+</html>
