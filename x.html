@@ -5,35 +5,44 @@
 <title>htmx 1</title>
 <!-- Load from unpkg -->
 <script src="https://unpkg.com/htmx.org@1.2.1"></script><script src="https://unpkg.com/htmx.org@1.2.1"></script>
-
+<style>
+  .sample1 {
+  width: 100px;
+  height: 50px;
+  }
+  .sample2 {
+  width: 800px;
+  height:150px;
+  }
+</style>
 </head>
 <body>
 
-<div style="width: 100px; height:50px;">
+<div class="sample1">
   <button hx-get="https://eded0569.github.io/contracts/index1.html" hx-target="#output1">
     <font color="red"> Red Text </font>
   </button>
   </div>
 
-<div style="width: 100px; height:50px;">
+<div class="sample1">
 <button hx-get="https://eded0569.github.io/contracts/index2.html" hx-target="#output2">
     <font color="blue"> Blue Text </font>
 </button>
 </div>
   
-<div style="width: 100px; height:50px;">
+<div class="sample1">
 <button hx-get="https://eded0569.github.io/contracts/index3.html" hx-target="#output3">
     <font color="green"> Green Text </font>
 </button>
 </div>
 
-<div style="width: 800px; height:150px;" id="output1">
+<div class="sample2" id="output1">
 </div>
 
-<div style="width: 800px; height:150px;" id="output2">
+<div class="sample2" id="output2">
 </div>
 
-<div style="width: 800px; height:150px;" id="output3">
+<div class="sample2" id="output3">
 </div>
   
 </body>
